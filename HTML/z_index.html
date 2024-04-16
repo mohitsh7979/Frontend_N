@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 50%;
+        height: 70vh;
+        background: linear-gradient(45deg, #f1b4b4, #ffd6d6);
+        margin: auto;
+        margin-top: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .box {
+        height: 40%;
+        width: 40%;
+        border: 2px solid black;
+        position: absolute;
+      }
+
+      .box:nth-child(1) {
+        background-color: yellow;
+        z-index: 2;
+        /* top: 0px;
+        z-index: 200; */
+      }
+      .box:nth-child(2) {
+        background-color: blue;
+        z-index: 1;
+        /* left: 0px;
+        z-index: 1; */
+      }
+      .box:nth-child(3) {
+        background-color: green;
+        z-index: 1;
+        /* right: 0px;
+        z-index: 1; */
+      }
+      .box:nth-child(4) {
+        background-color: orangered;
+        z-index: 1;
+        /* bottom: 0px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
