@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transection</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .container{
+
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: yellow;
+            border-radius: 80px;
+            /* transition-property: background-color,border-radius,height,width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out; */
+            /* animation-name: box;
+            animation-duration: 2s;
+            animation-iteration-count: infinite; */
+
+            animation: box 0.8s infinite linear;
+        
+            /* transition: all 0.8s ease-in;
+            background-color: yellow; */
+        }
+
+        .container:hover{
+            /* background-color: red;
+            border-radius: 200px;
+            height: 420px;
+            width: 420px; */
+
+            /* transform: rotate(-45deg);
+            transform: scale(0.8);
+            transform: skewX(-60deg);
+            transform: skewY(30deg);
+            transform: translateX(-400px);
+            transform: translateY(400px); */
+
+           
+        }
+
+        @keyframes box {
+
+            from{
+
+
+                transform: rotate(0deg);
+                transform: scale(0.1);
+            }
+
+            to{
+
+                transform: rotate(360deg);
+                transform: scale(1.2);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    
+</body>
+</html>
