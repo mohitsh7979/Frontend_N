@@ -19,6 +19,8 @@
         justify-content: center;
         align-items: center;
       }
+      
+      /*
 
       h1 {
     
@@ -30,7 +32,7 @@
 
         height: 400px;
         width: 400px;
-        /* border: 2px solid black; */
+         border: 2px solid black; 
         position: relative;
         overflow: hidden;
         box-shadow: 0px 0px 8px;
@@ -47,29 +49,29 @@
       .container:hover img{
 
          transform: scale(1.2);
-      }
+      } */
 
     
 
-      .content{
+      /* .content{
 
          height: 400px;
          width: 400px;
-         /* background-color: yellow; */
+         background-color: yellow;
          transition: all 0.3s ease-in-out;
          color: yellow;
          font-size: 22px;
          padding: 10px;
          position: absolute;
          z-index: 5;
-      }
+      } */
 
-      .container:hover .content{
+      /* .container:hover .content{
 
          transform: translateY(-150px);
-      }
+      } */
 
-      .overlay{
+      /* .overlay{
 
         height: 400px;
         width: 400px;
@@ -79,15 +81,70 @@
         left: 0px;
         display: none;
         transition: all 2s ease-in-out;
+      } */
+
+      /* .container:hover .overlay{
+        display: block;
+      } */
+
+      .header-ul{
+
+        display: flex;
+        border: 2px solid black;
+        height: 50px;
       }
 
-      .container:hover .overlay{
+      .header-ul li{
+
+        margin: 20px;
+        list-style: none;
+        height: 100%;
+      }
+
+      .overlay{
+
+         /* display: none; */
+         height: 50px;
+         width: 50px;
+         background-color: blue;
+         /* position: absolute; */
+         transition: all 1s ease-in-out;
+      }
+
+      .menu{
+        display: none;
+        position: absolute;
+      }
+
+      .p{
+        height: 100%;
+      }
+
+      /* .header-ul li:nth-child(3){
+        color: red;
+        
+      } */
+
+      .blog{
+        color: red;
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+        
+      }
+      .blog:hover .menu{
         display: block;
+        cursor: pointer;
+      }
+
+      .blog:hover .overlay{
+
+        /* display: block; */
+        transform: translateY(-50px);
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <!-- <div class="container">
         <img src="https://images.unsplash.com/photo-1712971578942-8d44b2d77143?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
 
         
@@ -96,6 +153,27 @@
            <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="overlay"></div>
+    </div> -->
+
+
+    <div class="header">
+        <ul class="header-ul">
+            <li>Home</li>
+            <li>About</li>
+            <li class="blog">
+                <div class="p">Page</div>
+                <div class="overlay"></div>
+                <div class="menu">
+                    <ul>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                        <li>D</li>
+                    </ul>
+                </div>
+            </li>
+            <li>Blog</li>
+        </ul>
     </div>
   </body>
 </html>
