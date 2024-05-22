@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="h">This is my h1 text</h1>
+    <button id="red">Red</button>
+    <button id="upper">UpperCase</button>
+    <button id="lower">LowerCase</button>
+    <button id="btn">Click</button>
+    <select name="" id="">
+        <option value="">None</option>
+        <option value="">25px</option>
+        <option value="">35px</option>
+        <option value="">50px</option>
+        <option value="">60px</option>
+    </select>
+
+    <script>
+      document.getElementById("btn").onclick = function () {
+        alert("Hello Java Script !!");
+      };
+
+      document.getElementById("red").onclick = function () {
+        document.getElementById("h").style.color = "red";
+      };
+
+      document.getElementById("upper").onclick = function () {
+        document.getElementById("h").style.textTransform = "uppercase";
+      };
+
+      document.getElementById("lower").onclick = function () {
+        document.getElementById("h").style.textTransform = "lowercase";
+      };
+    </script>
+  </body>
+</html>
