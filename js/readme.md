@@ -10,4 +10,5 @@ objects
 template literals 
 array desct...,object 
 spread operator,rest operator
+dom
 

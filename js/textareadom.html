@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+
+    <!-- <textarea name="" id="textarea" rows="10" cols="30"></textarea> -->
+    <input type="text" placeholder="Enter Your Name" class="inp"> <br> <br>
+    <input type="text" placeholder="Enter Your Email" class="inp"> <br> <br>
+    <input type="text" placeholder="Enter Your Age" class="inp"> <br> <br>
+    <input type="text" placeholder="Enter Your Name" class="inp"> <br> <br>
+    <input type="text" placeholder="Enter Your Email" class="inp"> <br> <br>
+    <input type="text" placeholder="Enter Your Age" class="inp"> <br> <br>
+    <input type="text" placeholder="Enter Your Email" class="inp"> <br> <br>
+    <input type="text" placeholder="Enter Your Age" class="inp"> <br> <br>
+    <button id="btn">Submit</button>
+
+
+    <script>
+      
+      document.getElementById("btn").onclick = function(){
+
+        let a = document.getElementsByClassName("inp");
+      
+        
+        // for(let i = 0 ; i<a.length ; i++){
+
+        //     let a = document.getElementsByClassName("inp")[i].value;
+        //     console.log(a[i].value)
+        // }
+
+        for(let i of a){
+            console.log(i.value)
+        }
+
+     }
+
+    </script>
+    
+    
+</body>
+</html>
