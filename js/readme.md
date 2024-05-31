@@ -10,5 +10,9 @@ objects
 template literals 
 array desct...,object 
 spread operator,rest operator
-dom
+dom by id 
+dom by class
+dom by queryselector 
+dom by queryselectorAll 
+
 
