@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="conatiner">
+        <input type="text">
+        <button>SUbmit</button>
+
+        <div class="details">
+            <p>Name :</p>  
+            <p>Roll No :</p>  
+            <p>Subject :</p>   
+            <p>School Name :</p>
+            <p>School Address :</p>
+            <p>School Fees :</p>
+     
+        </div>
+    </div>
+
+    <script>
+       
+    //    let student = {
+
+    //       id:1,
+    //       name:"mohit",
+    //       email:"mohit@gmail.com",
+    //       fullinfo(){
+    //         console.log(this.id,this.name,this.email)
+    //       }
+    //    }
+
+
+    //    console.log(student)
+
+    let school = {
+
+        school_name:"JDS",
+        school_address:"Near by Gopalpura",
+        fees(subject){
+            if(subject == "PCM"){
+                console.log("Total Fees 40000")
+            }
+            else if(subject == "Commerce"){
+                console.log("Total Fess 20000")
+            }
+            else if(subject == "Arts"){
+                console.log("Total Fees 10000")
+            }
+            else{
+                console.log("Pass Your Subject")
+            }
+        }
+    }
+
+    let mohit = {
+
+        name:"mohit",
+        roll_no:1001,
+        subject:"PCM",  // 40000
+
+    };
+
+    let rohit = {
+        
+        name:"rohit",
+        roll_no:1002,
+        subject:"Commerce" // 20000
+    };
+
+    let aman = {
+        
+        name:"aman",
+        roll_no:1002,
+        subject:"Arts" // 10000
+    };
+
+    mohit.__proto__ = school;
+    rohit.__proto__ = school;
+    aman.__proto__ = school;
+
+
+
+           
+    </script>
+    
+</body>
+</html>
