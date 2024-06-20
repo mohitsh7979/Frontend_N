@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+            
+            // class is a blueprint or template
+            // objects could be anything
+            
+
+        class student{
+
+            constructor(name,rollno,age,email){
+
+                this.user_name = name
+                this.user_rollno = rollno 
+                this.user_age = age 
+                this.user_email = email
+            }
+            
+            output(){
+                
+                console.log(this.user_name,this.user_rollno,this.user_age,this.user_email)
+            }
+        }
+
+        let mohit = new student("mohit",1001,29,"mohit@gmail.com");
+        mohit.output()
+        let rohit = new student("rohit",1002,52,"rohit@gmail.com");
+        rohit.output()
+       
+        
+      
+
+    </script>
+    
+</body>
+</html>
