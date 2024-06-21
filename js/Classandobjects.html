@@ -1,67 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <script>
-            
-            // class is a blueprint or template
-            // objects could be anything
-            
+      // class is a blueprint or template
+      // objects could be anything
 
-        // class student{
+      // class student{
 
-        //     constructor(name,rollno,age,email){
+      //     constructor(name,rollno,age,email){
 
-        //         this.user_name = name
-        //         this.user_rollno = rollno 
-        //         this.user_age = age 
-        //         this.user_email = email
-        //     }
-            
-        //     output(){
-                
-        //         console.log(this.user_name,this.user_rollno,this.user_age,this.user_email)
-        //     }
-        // }
+      //         this.user_name = name
+      //         this.user_rollno = rollno
+      //         this.user_age = age
+      //         this.user_email = email
+      //     }
 
-        // let mohit = new student("mohit",1001,29,"mohit@gmail.com");
-        // mohit.output()
-        // let rohit = new student("rohit",1002,52,"rohit@gmail.com");
-        // rohit.output()
+      //     output(){
 
+      //         console.log(this.user_name,this.user_rollno,this.user_age,this.user_email)
+      //     }
+      // }
 
+      // let mohit = new student("mohit",1001,29,"mohit@gmail.com");
+      // mohit.output()
+      // let rohit = new student("rohit",1002,52,"rohit@gmail.com");
+      // rohit.output()
 
-        class student{
+      // class student{
 
-            constructor(name,roll,email,subject){
-               
-                this.stu_name = name 
-                this.stu_roll = roll 
-                this.stu_email = email 
-                this.stu_subject = subject
-            }
+      //     constructor(name,roll,email,subject){
 
-            showinformation(){
-                console.log(this.stu_name,this.stu_roll,this.stu_email,this.stu_subject)
-            }
+      //         this.stu_name = name
+      //         this.stu_roll = roll
+      //         this.stu_email = email
+      //         this.stu_subject = subject
+      //     }
 
-            getfeesinfo(){}
+      //     showinformation(){
+      //         console.log(this.stu_name,this.stu_roll,this.stu_email,this.stu_subject)
+      //     }
+
+      //     getfeesinfo(){}
+      // }
+
+      // let mohit = new student("mohit",1001,"mohit@gmail.com","pcm");
+      // let rohit = new student("rohit",1002,"rohit@gmail.com","commerce");
+      // let aman = new student("aman",1003,"aman@gmail.com","arts");
+
+      // Inheritance
+
+      // parent  props
+
+      // child can be access of parent class props using inhertiance
+
+      // class school{
+
+      //     show(){
+      //         console.log("I am parent class")
+      //     }
+      // }
+
+      // class student extends school{
+
+      //     output(){
+      //         console.log("I am student class")
+      //     }
+
+      // }
+
+      // let o1 = new student();
+      // o1.output()
+      // o1.show()
+
+      class school {
+        
+        constructor(school_name,school_address){
+            this.school_name = school_name 
+            this.school_address = school_address
         }
 
-        let mohit = new student("mohit",1001,"mohit@gmail.com","pcm");
-        let rohit = new student("rohit",1002,"rohit@gmail.com","commerce");
-        let aman = new student("aman",1003,"aman@gmail.com","arts");
-       
+        getschoolinfo(){
+            console.log(this.school_name,this.school_address)
+        }
         
-      
+      }
 
+      class student extends school{
+
+        constructor(school_name,school_address,name,roll_no,subject){
+            super(school_name,school_address)
+            this.name = name 
+            this.roll_no  = roll_no 
+            this.subject = subject
+        }
+
+        getstudentinfo(){
+            console.log(this.school_name,this.school_address,this.name,this.roll_no,this.subject)
+        }
+       
+      }
+
+      let o1 = new student("JDS","JAIPUR","mohit",1001,"PCM");
+      o1.getstudentinfo()
+
+      let o2 = new student("SUBHOD","JAIPUR","rohit",1002,"COmmerece");
+      o2.getstudentinfo()
+
+    //   let o1 = new school("JDS","Jaipur");
+    //   let o2 = new student("Mohit",151,"PCM");
+    //   o1.getschoolinfo()
+    //   o2.getstudentinfo()
+   
     </script>
-    
-</body>
+  </body>
 </html>
